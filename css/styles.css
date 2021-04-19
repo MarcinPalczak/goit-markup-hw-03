@@ -128,6 +128,7 @@ img {
 .web-studio-header-logo {
     margin-right: 85px;
 }
+
 /* ===== END LOGO ===== */
 
 /* ===== NAVIGATION LINKS ===== */
@@ -387,12 +388,34 @@ img {
 
 /* ===== PORTFOLIO - PROJECTS CARDS ===== */
 
-.project-list-item {
+.projects-cards-section {
+    align-items: center;
+    align-content: center;
+    padding-top: 25px;
+    background-color: var(--background-color-navigation);
+}
+
+.projects-cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects-cards-list-item {
     background-color: var(--font-color-logo-light);
     border: 1px solid var(--border-color-primary);
 }
 
-.project-list-item-header {
+.projects-cards-list-item:not(:nth-child(n+7)) {
+    margin-bottom: 30px;
+}
+
+.projects-cards-list-item-info {
+    padding: 20px 24px 19px;
+}
+
+.projects-cards-list-item-header {
+    margin-bottom: 4px;
     color: var(--font-color-title);
     font-weight: 700;
     font-size: 18px;
@@ -400,7 +423,7 @@ img {
     letter-spacing: 0.06em;
 }
 
-.project-list-item-desc {
+.projects-cards-list-item-desc {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
