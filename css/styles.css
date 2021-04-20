@@ -72,6 +72,9 @@ img {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title {
@@ -97,6 +100,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 80px;
 }
 
 .header-box-navigation {
@@ -281,6 +285,10 @@ img {
 /* ===== END CZYM SIĘ ZAJMUJEMY ===== */
 
 /* ===== NASZ ZESPÓŁ ===== */
+
+.our-team-section {
+    background-color: var(--background-color-secondary);
+}
 
 .our-team-section-title {
     margin-bottom: 50px;
